@@ -1,0 +1,40 @@
+<html>
+  PS C:\Users\gabri\github-ibm> git log
+commit 4d5a916be617312bf70ce384fc63be26d32f0581 (HEAD -> master)
+Author: Pedro Gabriel <pedro.pissarra@gmail.com>
+Date:   Mon Aug 4 09:45:24 2025 -0300
+
+    created a new HTML file
+PS C:\Users\gabri\github-ibm> git branch code_list
+PS C:\Users\gabri\github-ibm> git checkout code_list
+Switched to branch 'code_list'
+PS C:\Users\gabri\github-ibm> git add index.html
+PS C:\Users\gabri\github-ibm> git commit -m "Updated index.html file in branch"
+On branch code_list
+nothing to commit, working tree clean
+PS C:\Users\gabri\github-ibm> git commit -m "Updated index.html file in branch"
+On branch code_list
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\gabri\github-ibm> git log
+commit 4d5a916be617312bf70ce384fc63be26d32f0581 (HEAD -> code_list, master)
+Author: Pedro Gabriel <pedro.pissarra@gmail.com>
+Date:   Mon Aug 4 09:45:24 2025 -0300
+
+    created a new HTML file
+PS C:\Users\gabri\github-ibm> git status
+On branch code_list
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\gabri\github-ibm> git merge code_list
+Already up to date.
+PS C:\Users\gabri\github-ibm>  
+</html>
